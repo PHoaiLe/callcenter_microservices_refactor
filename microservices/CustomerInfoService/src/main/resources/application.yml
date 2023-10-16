@@ -1,0 +1,18 @@
+
+server:
+  port: 8090
+
+spring:
+  application:
+    name: CustomerInfoService
+  datasource:
+    url: ${database_connecting_url}
+    username: ${database_username}
+    password: ${database_password}
+  properties:
+    system-core-pool-size: ${SYSTEM_CORE_POOL_SIZE}
+    system-max-pool-size: ${SYSTEM_MAX_POOL_SIZE}
+    system-thread-name-prefix: ${SYSTEM_THREAD_NAME_PREFIX}
+    system-queue-capacity: ${SYSTEM_QUEUE_CAPACITY}
+  kafka:
+    bootstrap-server: ${KAFKA_BOOTSTRAP_SERVER}

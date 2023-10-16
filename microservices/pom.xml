@@ -10,13 +10,16 @@
     <packaging>pom</packaging>
 
     <name>call_center_microservice</name>
-    
+    <modules>
+        <module>CustomerInfoService</module>
+        <module>AuthService</module>
+    </modules>
+
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <spring.boot.dependency.version>3.0.5</spring.boot.dependency.version>
-
     </properties>
 
 
