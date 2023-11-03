@@ -45,6 +45,7 @@ public class AsyncConfiguration implements AsyncConfigurer
         return taskExecutor;
     }
 
+    @Bean
     @Override
     public AsyncUncaughtExceptionHandler getAsyncUncaughtExceptionHandler() {
         return AsyncConfigurer.super.getAsyncUncaughtExceptionHandler();

@@ -13,6 +13,8 @@
     <modules>
         <module>CustomerInfoService</module>
         <module>AuthService</module>
+        <module>EurekaService</module>
+        <module>SpringAPIGateway</module>
     </modules>
 
 
@@ -20,6 +22,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <spring.boot.dependency.version>3.0.5</spring.boot.dependency.version>
+        <spring.cloud.dependencies.version>2022.0.4</spring.cloud.dependencies.version>
     </properties>
 
 
@@ -29,6 +32,13 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring.boot.dependency.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud.dependencies.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>

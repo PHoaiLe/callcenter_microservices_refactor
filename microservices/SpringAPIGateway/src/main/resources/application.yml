@@ -1,0 +1,19 @@
+
+server:
+  port: ${SERVER_PORT}
+
+spring:
+  main:
+    web-application-type: reactive
+  application:
+    name: ${APPLICATION_NAME}
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: ${ENABLE_DISCOVERY_LOCATOR}
+
+eureka:
+  client:
+    service-url:
+      default-zone: ${SERVICE_REGISTRY_EUREKA}

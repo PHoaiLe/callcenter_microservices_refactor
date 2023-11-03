@@ -25,7 +25,7 @@ public class CustomerInfoServiceV1
         this.repository = repository;
     }
 
-    public CustomerInfo getCustomerInfoById(Long customerId)
+    public CustomerInfo     getCustomerInfoById(Long customerId)
     {
 //        return CompletableFuture.supplyAsync(new Supplier<CustomerInfo>() {
 //            @Override
